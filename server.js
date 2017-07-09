@@ -5,8 +5,6 @@ const babyNames = require('usbabynames');
 let dataToSend = [];
 var Promise = require("bluebird");
 
-const CONCURRENCY = process.env.WEB_CONCURRENCY || 1;
-
 app.use(express.static('src/client'));
 
 app.get('/names', (req, res) => {
