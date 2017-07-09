@@ -5,7 +5,7 @@ const babyNames = require('usbabynames');
 let dataToSend = [];
 var Promise = require("bluebird");
 
-app.use(express.static('src/client'));
+app.use(express.static('/src/client'));
 
 app.get('/names', (req, res) => {
 
