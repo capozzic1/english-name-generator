@@ -2,6 +2,10 @@
   "name": "react-hello-world",
   "version": "1.0.0",
   "description": "",
+  "engines":{
+    "npm": "3.10.10",
+    "node": "v6.11.0"
+  },
   "main": "index.js",
   "scripts": {
     "dev": "npm-run-all --parallel server watch",

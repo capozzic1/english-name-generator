@@ -3,6 +3,12 @@ $primary-color: #4c266d;
 $font-headers: 'Bellefair', serif;
 $font-body: 'Fresca', sans-serif;
 //test
+
+@media (min-width: 0px) and (max-width: 425px){
+div {
+column-count: 1 !important;
+  }
+}
 body {
   color: $primary-color;
 
@@ -26,6 +32,7 @@ li {
   div {
     border:1px solid black;
     min-height: 25rem;
+
     column-count: 2;
     @extend %div-align;
 
