@@ -2,8 +2,11 @@ const express = require('express');
 const app = express();
 const port = process.env.PORT || 3000;
 const babyNames = require('usbabynames');
+const compression = require('compression');
 let dataToSend = [];
 var Promise = require("bluebird");
+
+app.use(compression());
 
 app.use(express.static('src/client'));
 
